@@ -554,8 +554,9 @@ class AttentionLSTM(nn.Module):
         encoder_inputs = encoder_inputs[1:]
 
         """
-        Encoder: takes in encoder_inputs (T series of size n) and produces T tensors of size (1, encoder_dim).
+        Data goes through Encoder once again.
         
+        Encoder: takes in encoder_inputs (T series of size n) and produces T tensors of size (1, encoder_dim).
         outputs_Encoder --  of size (T, 1, m).
         """
 
